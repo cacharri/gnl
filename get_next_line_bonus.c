@@ -6,7 +6,7 @@
 /*   By: ialvarez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/06 18:48:04 by ialvarez          #+#    #+#             */
-/*   Updated: 2021/05/06 19:04:57 by ialvarez         ###   ########.fr       */
+/*   Updated: 2021/05/06 19:08:28 by ialvarez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ static int	floki(int i, int fd, char **line, char **reader)
 	return (0);
 }
 
-int	get_next_line_bonus(int fd, char **line)
+int	get_next_line(int fd, char **line)
 {
 	static char	*reader[4096];
 	char		rest[BUFFER_SIZE + 1];
