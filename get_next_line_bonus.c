@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ialvarez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/26 16:12:56 by ialvarez          #+#    #+#             */
-/*   Updated: 2021/05/06 18:54:59 by ialvarez         ###   ########.fr       */
+/*   Created: 2021/05/06 18:48:04 by ialvarez          #+#    #+#             */
+/*   Updated: 2021/05/06 19:04:57 by ialvarez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
-static	int	floki(int i, int fd, char **line, char **reader)
+static int	floki(int i, int fd, char **line, char **reader)
 {
 	char	*tempor;
 	char	*aux;
@@ -40,7 +40,7 @@ static	int	floki(int i, int fd, char **line, char **reader)
 	return (0);
 }
 
-int	get_next_line(int fd, char **line)
+int	get_next_line_bonus(int fd, char **line)
 {
 	static char	*reader[4096];
 	char		rest[BUFFER_SIZE + 1];
