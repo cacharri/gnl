@@ -6,7 +6,7 @@
 /*   By: ialvarez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/26 16:05:01 by ialvarez          #+#    #+#             */
-/*   Updated: 2021/05/05 21:00:21 by ialvarez         ###   ########.fr       */
+/*   Updated: 2021/05/06 18:36:00 by ialvarez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@
 
 int		get_next_line(int fd, char **line);
 char	*ft_strdup(const char *s1);
-void    *ft_memcpy(void *dst, const void *src, size_t n);
-size_t  ft_strlen(const char *s);
-char    *ft_strjoin(char const *s1, char const *s2);
-char    *ft_strchr(const char *s, int c);
+void	*ft_memcpy(void *dst, const void *src, size_t n);
+size_t	ft_strlen(const char *s);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strchr(const char *s, int c);
 
 #endif

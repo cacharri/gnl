@@ -6,7 +6,7 @@
 /*   By: ialvarez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/23 15:09:54 by ialvarez          #+#    #+#             */
-/*   Updated: 2021/05/05 14:11:54 by ialvarez         ###   ########.fr       */
+/*   Updated: 2021/05/06 18:39:17 by ialvarez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,20 +70,20 @@ char	*ft_strdup(const char *s1)
 	return (dst);
 }
 
-char    *ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
-    int     a;
-    int     len;
-    char    x;
+	int		a;
+	int		len;
+	char	x;
 
-    x = c;
-    a = 0;
-    len = ft_strlen(s);
-    while (a < len + 1)
-    {
-        if (s[a] == x)
-            return ((char *)s + a);
-        a++;
-    }
-    return (NULL);
+	x = c;
+	a = 0;
+	len = ft_strlen(s);
+	while (a < len + 1)
+	{
+		if (s[a] == x)
+			return ((char *)s + a);
+		a++;
+	}
+	return (NULL);
 }
